@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SOS Trabalho - Vagas</title>
-    @vite(['resources/css/mainVag.css'])
+    @vite(['resources/css/mainVag.css', 'resources/js/mainVag.js'])
 </head>
 
 <body>
     <header class="navbar">
         <div class="logo">
-            <a href="home.html">
-                <img src="" alt="SOS Trabalho Logo">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('assets/img/logotipo-sos-trabalho-sem-fundo.png') }}" alt="SOS Trabalho Logo">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="home.html">Início</a></li>
-                <li><a href="vagas.html" class="ativo">Vagas</a></li>
-                <li><a href="empresasParceiras.html">Empresas</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="anunciarVaga.html">Anunciar Vaga</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html" class="btn-cadastrar">Cadastre-se</a></li>
+                <li><a href="{{ route('home') }}">Início</a></li>
+                <li><a href="{{ route('vagas') }}" class="ativo">Vagas</a></li>
+                <li><a href="{{ route('empresas') }}">Empresas</a></li>
+                <li><a href="{{ route('perfil') }}">Perfil</a></li>
+                <li><a href="{{ route('anunciar') }}">Anunciar Vaga</a></li>
+                <li><a href="{{ route('login') }}">Login</a></li>
+                <li><a href="{{ route('cadastro') }}" class="btn-cadastrar">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
@@ -83,15 +83,14 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
-                <img src="img/logotipo-sos-trabalho-sem-fundo.png" alt="Logo SOS Trabalho" class="footer-img">
+                <img src="{{ asset('assets/img/logotipo-sos-trabalho-sem-fundo.png') }}" alt="SOS Trabalho Logo"
+                    class="footer-img">
             </div>
             <div class="footer-center">
                 <p>© 2025 SOS Trabalho. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script src="JS/mainVag.js"></script>
 </body>
 
 </html>

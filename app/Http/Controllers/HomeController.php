@@ -10,8 +10,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function vagas()
-    {
-        return view('vagas');
-    }
 }

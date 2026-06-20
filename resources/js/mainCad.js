@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mostrarSucesso("Cadastro concluído com sucesso!");
     form.reset();
-    setTimeout(() => window.location.href = "login.html", 1000);
+    setTimeout(() => window.location.href = "/login", 1000);
   });
 });
 

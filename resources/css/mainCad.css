@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f4ff;
+  color: #2e58a4;
+  padding-top: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #e8f0ff;
+  border-bottom: 2px solid #c7d7f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2e58a4;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+  color: #1c3973;
+}
+
+.btn-cadastrar {
+  background-color: #2e58a4;
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background-color: #1c3973;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #2e58a4;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d7f5;
+  font-size: 15px;
+}
+
+.form-container input:focus {
+  border-color: #2e58a4;
+  outline: none;
+  box-shadow: 0 0 4px rgba(46, 88, 164, 0.5);
+}
+
+.form-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e58a4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #1c3973;
+}
+
+.link-msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2e58a4;
+}
+
+.link-msg a {
+  color: #1c3973;
+  font-weight: 600;
+}
+
+.link-msg a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #e3eeff;
+  color: #2e58a4;
+  padding: 15px 30px;
+  border-top: 2px solid #c7d7f5;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-img {
+  width: 40px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-center {
+    margin: 10px 0;
+  }
+}

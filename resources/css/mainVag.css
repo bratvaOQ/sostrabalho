@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f4ff;
+  color: #2e58a4;
+  padding-top: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #e8f0ff;
+  border-bottom: 2px solid #c7d7f5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2e58a4;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+  color: #1c3973;
+}
+
+.btn-cadastrar {
+  background-color: #2e58a4;
+  color: #fff !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background-color: #1c3973;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.vagas-header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.vagas-header h1 {
+  font-size: 28px;
+}
+
+.search-inline {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.search-inline input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #c7d7f5;
+  font-size: 15px;
+}
+
+.search-inline input:focus {
+  border-color: #2e58a4;
+  outline: none;
+  box-shadow: 0 0 4px rgba(46, 88, 164, 0.5);
+}
+
+.search-inline button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e58a4;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-inline button:hover {
+  background-color: #1c3973;
+}
+
+.vagas-list {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vaga-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.vaga-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.vaga-info h3 {
+  color: #2e58a4;
+  margin-bottom: 5px;
+}
+
+.vaga-info .empresa {
+  font-size: 14px;
+  color: #1c3973;
+  margin-bottom: 10px;
+}
+
+.vaga-info .descricao {
+  font-size: 14px;
+  color: #2e58a4;
+}
+
+.vaga-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vaga-actions button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-detalhes {
+  background-color: #e8f0ff;
+  color: #2e58a4;
+}
+
+.btn-detalhes:hover {
+  background-color: #2e58a4;
+  color: #fff;
+}
+
+.btn-candidatar {
+  background-color: #2e58a4;
+  color: #fff;
+}
+
+.btn-candidatar:hover {
+  background-color: #1c3973;
+}
+
+.status-candidatura {
+  color: #1c3973;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #e3eeff;
+  color: #2e58a4;
+  padding: 15px 30px;
+  border-top: 2px solid #c7d7f5;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-img {
+  width: 40px;
+  height: auto;
+}
+
+.limpar-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+#limpar-vagas {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e8f0ff;
+  color: #2e58a4;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#limpar-vagas:hover {
+  background-color: #2e58a4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .search-inline {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vaga-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vaga-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-center {
+    margin: 10px 0;
+  }
+}
