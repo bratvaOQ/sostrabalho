@@ -35,7 +35,8 @@
                 <input id="vaga-titulo" type="text" placeholder="Título da vaga" required />
                 <input id="vaga-empresa" type="text" placeholder="Empresa" required />
                 <input id="vaga-local" type="text" placeholder="Localização (Cidade, Estado ou Remoto)" />
-                <textarea id="vaga-descricao" placeholder="Descrição da vaga e requisitos" required></textarea>
+                <textarea id="vaga-descricao" placeholder="Descrição da vaga" required></textarea>
+                <textarea id="vaga-requisito" placeholder="Requisitos" required></textarea>
                 <input id="vaga-salario" type="number" placeholder="Remuneração" />
 
                 <div class="perfil-actions">

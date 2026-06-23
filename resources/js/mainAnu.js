@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    
     const titulo = document.getElementById("vaga-titulo")?.value.trim();
     const empresa = document.getElementById("vaga-empresa")?.value.trim();
     const local = document.getElementById("vaga-local")?.value.trim();
