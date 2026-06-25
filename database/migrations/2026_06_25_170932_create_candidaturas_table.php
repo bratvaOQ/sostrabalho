@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('candidaturas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('vagas_id');
+            $table->string('usuarios_id');
         });
     }
 
