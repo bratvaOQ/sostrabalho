@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Vaga;
 use App\Models\Candidatura;
+use App\Models\candidaturas;
+use App\Models\vagas;
 use Illuminate\Database\Seeder;
 
 class CandidaturaSeeder extends Seeder
@@ -16,7 +18,7 @@ class CandidaturaSeeder extends Seeder
     {
         
         $usuarios = User::all();
-        $vagas = Vaga::all();
+        $vagas = vagas::all();
 
        
         if ($usuarios->isEmpty() || $vagas->isEmpty()) {
@@ -25,7 +27,7 @@ class CandidaturaSeeder extends Seeder
 
         
         for ($i = 0; $i < 20; $i++) {
-            Candidatura::create([
+            candidaturas::create([
                 'vaga_id' => $vagas->random()->id,
                 'user_id' => $usuarios->random()->id,
             ]);
